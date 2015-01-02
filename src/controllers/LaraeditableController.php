@@ -11,16 +11,21 @@ class LaraeditableController extends Controller {
 
     public function postIndex() {
 
-        //Load view paths
+        //Load view laravel paths
         $paths = Config::get('view.paths');
 
         //Load file view
         $file = $paths[0] . DIRECTORY_SEPARATOR . Input::get('view') . '.blade.php';
         $html = file_get_contents($file);
 
-        //Init crawler and edit node
+        //Init crawler
         $crawler = new HtmlPageCrawler($html);
-        $crawler->filter("#" + Input::get('id'))->setInnerHtml(Input::get('html'));
+
+        //Set filter
+        $filter = '#' . Input::get('id');
+
+        //Edit node
+        $crawler->filter($filter)->setInnerHtml(Input::get('html'));
 
         //write file
         file_put_contents($file, $crawler->saveHTML());
