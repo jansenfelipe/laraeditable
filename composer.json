@@ -1,0 +1,33 @@
+{
+    "name": "jansenfelipe/laraeditable",
+    "description": "Edit images and static text in views Laravel 4",
+    "keywords": ["laravel", "editable"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jansen Felipe",
+            "email": "jansen.felipe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"        
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "JansenFelipe\\Laraeditable\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "stable"
+}
