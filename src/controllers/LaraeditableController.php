@@ -7,11 +7,6 @@ use Illuminate\Support\Facades\Input;
 
 class LaraeditableController extends Controller {
 
-    /**
-     * Atualização Pessoa
-     *
-     * @return Response
-     */
     public function postIndex() {
         var_dump(Input::all());
     }
