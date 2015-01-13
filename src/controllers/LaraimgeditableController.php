@@ -2,16 +2,18 @@
 
 namespace JansenFelipe\Laraeditable\Controllers;
 
+use Exception;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
+use function public_path;
 
 class LaraimgeditableController extends Controller {
 
     public function postIndex() {
-
-
         $imagem = Input::file('imagem');
 
         if (is_null($imagem))
@@ -42,8 +44,6 @@ class LaraimgeditableController extends Controller {
             file_put_contents($file, $crawler->saveHTML());
 
             return Redirect::back()->with('alert', 'Banner enviado com sucesso!');
-        } else
-            throw new Exception('Erro ao enviar banner.');
+        }
     }
-
-}
+}    
