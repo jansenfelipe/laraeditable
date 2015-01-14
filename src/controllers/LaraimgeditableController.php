@@ -5,7 +5,6 @@ namespace JansenFelipe\Laraeditable\Controllers;
 use Exception;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 use Wa72\HtmlPageDom\HtmlPageCrawler;
