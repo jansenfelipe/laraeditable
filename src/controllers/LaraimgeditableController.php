@@ -38,8 +38,14 @@ class LaraimgeditableController extends Controller {
             //Edit node
             $crawler->filter($filter)->setAttribute('src', '/uploads/' . $filename);
 
+            $newHTML = html_entity_decode($crawler->saveHTML());
+
+            $newHTML = str_replace('%7B%7B', '{{', $newHTML);
+            $newHTML = str_replace('%7D%7D', '}}', $newHTML);
+            $newHTML = str_replace('%24', '$', $newHTML);
+
             //write file
-            file_put_contents($file, $crawler->saveHTML());
+            file_put_contents($file, $newHTML);
 
             return Redirect::back()->with('alert', 'Banner enviado com sucesso!');
         }
