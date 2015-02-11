@@ -32,6 +32,8 @@ class LaraeditableController extends Controller {
         $newHTML = str_replace('%7B%7B', '{{', $newHTML);
         $newHTML = str_replace('%7D%7D', '}}', $newHTML);
         $newHTML = str_replace('%24', '$', $newHTML);
+        $newHTML = str_replace('%20', ' ', $newHTML);
+        $newHTML = str_replace('%7C', '|', $newHTML);
                 
         
         //write file
