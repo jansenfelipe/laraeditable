@@ -1,11 +1,10 @@
-## Lara Editable
+## Laraeditable L5
 
-
-#### How to
+#### How to use
 
 1) Add require:
 
-    "jansenfelipe/laraeditable": "1.0.*@dev"
+    "jansenfelipe/laraeditable": "2.0.*@dev"
 
 2) Add service provider:
 

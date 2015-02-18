@@ -19,7 +19,7 @@ class LaraeditableServiceProvider extends ServiceProvider {
 	public function boot()
 	{
 		$this->package('jansenfelipe/laraeditable');
-                include __DIR__.'/../../routes.php';
+                include __DIR__.'/Http/routes.php';
 	}
 
 	/**

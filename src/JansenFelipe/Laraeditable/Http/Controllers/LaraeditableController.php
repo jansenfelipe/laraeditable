@@ -1,6 +1,6 @@
 <?php
 
-namespace JansenFelipe\Laraeditable\Controllers;
+namespace JansenFelipe\Laraeditable\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Config;
@@ -35,7 +35,6 @@ class LaraeditableController extends Controller {
         $newHTML = str_replace('%20', ' ', $newHTML);
         $newHTML = str_replace('%7C', '|', $newHTML);
                 
-        
         //write file
         file_put_contents($file, $newHTML);
     }
