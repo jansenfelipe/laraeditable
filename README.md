@@ -4,22 +4,27 @@
 
 #### How to use
 
-1) Add require:
+1) Add require in `composer.json`:
 
     "jansenfelipe/laraeditable": "2.0.*@dev"
 
-2) Add service provider:
-
-    'JansenFelipe\Laraeditable\LaraeditableServiceProvider'
+2) Add service provider in `config/app.php`:
+    
+    'providers' => [
+        ..
+        'JansenFelipe\Laraeditable\LaraeditableServiceProvider'
+    ]
 
 3) Publish assets:
 
-    php artisan asset:publish jansenfelipe/laraeditable
+    php artisan vendor:publish
 
 4) Add CSS and JS
 
-		<link rel="stylesheet" href="packages/jansenfelipe/laraeditable/laraeditable.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="packages/jansenfelipe/laraeditable/laraeditable.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="/vendor/jansenfelipe-laraeditable/laraeditable.js"></script>
+
+    <link href="/vendor/jansenfelipe-laraeditable/laraeditable.css" type="text/css" media="screen" rel="stylesheet">
 
 5) Find the element you want to edit in your view.blade. Add an identifier, the name of the view and the class `laraeditable`:
 
