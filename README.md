@@ -1,5 +1,7 @@
 ## Laraeditable L5
 
+![Demonstration](https://github.com/jansenfelipe/laraeditable/raw/master/demo.gif "Demonstration")
+
 #### How to use
 
 1) Add require:
