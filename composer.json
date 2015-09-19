@@ -10,8 +10,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "laravel/framework": "5.0.*",
+        "php": ">=5.5.9",
+        "laravel/framework": "5.1.*",
         "wa72/htmlpagedom":"~1.0"
     },
     "require-dev": {
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "JansenFelipe\\Laraeditable\\": "src/JansenFelipe/Laraeditable"
+            "JansenFelipe\\Laraeditable\\": "src/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev"
+            "dev-master": "3.0-dev"
         }
     },
     "minimum-stability": "stable"
