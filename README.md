@@ -1,16 +1,16 @@
-## Laraeditable
+# Laraeditable
 
 ![Demonstration](https://github.com/jansenfelipe/laraeditable/raw/master/demo.gif "Demonstration")
 
-#### How to use
+## How to use
 
-1) Add library:
+### Add library:
 
 ```sh
 $ composer require jansenfelipe/laraeditable
 ```
 
-2) Add service provider in `config/app.php`:
+### Add service provider in `config/app.php`:
     
 ```php
 // file START ommited
@@ -20,13 +20,13 @@ $ composer require jansenfelipe/laraeditable
     ],
 // file END ommited
 
-3) Publish assets:
+### Publish assets:
 
 ```shell
 $ php artisan vendor:publish
 ```
 
-4) Add CSS and JS
+### Add CSS and JS
 
 ```html
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -35,7 +35,7 @@ $ php artisan vendor:publish
 <link href="/vendor/jansenfelipe-laraeditable/laraeditable.css" type="text/css" media="screen" rel="stylesheet">
 ```
 
-5) Find the element you want to edit in your view.blade. Add an identifier, the name of the view and the class `laraeditable`:
+### Find the element you want to edit in your view.blade. Add an identifier, the name of the view and the class `laraeditable`:
 
 Ex: index.blade.php
 
