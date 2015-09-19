@@ -35,7 +35,7 @@ $ php artisan vendor:publish
 <link href="/vendor/jansenfelipe-laraeditable/laraeditable.css" type="text/css" media="screen" rel="stylesheet">
 ```
 
-### Find the element you want to edit in your view.blade. Add an identifier, the name of the view and the class `laraeditable`:
+##### Find the element you want to edit in your view.blade. Add an identifier, the name of the view and the class `laraeditable`:
 
 Ex: index.blade.php
 
