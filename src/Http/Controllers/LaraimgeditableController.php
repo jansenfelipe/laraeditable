@@ -1,4 +1,6 @@
-<?php namespace JansenFelipe\Laraeditable\Http\Controllers;
+<?php
+
+namespace JansenFelipe\Laraeditable\Http\Controllers;
 
 use Exception;
 use Illuminate\Routing\Controller;
