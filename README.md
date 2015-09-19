@@ -19,6 +19,7 @@ $ composer require jansenfelipe/laraeditable
         \Laraerp\Providers\LaraerpServiceProvider::class,
     ],
 // file END ommited
+``` 
 
 ### Publish assets:
 
