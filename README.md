@@ -16,7 +16,7 @@ $ composer require jansenfelipe/laraeditable
 // file START ommited
     'providers' => [
         // other providers ommited
-        \Laraerp\Providers\LaraerpServiceProvider::class,
+        JansenFelipe\Laraeditable\LaraeditableServiceProvider::class,
     ],
 // file END ommited
 ``` 
